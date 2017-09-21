@@ -13,8 +13,8 @@ RUN curl -L https://github.com/openshift/origin/releases/download/$OC_CLI_VERSIO
 
 RUN curl -L https://github.com/radanalyticsio/oshinko-cli/releases/download/$OSHINKO_CLI_VERSION/oshinko_${OSHINKO_CLI_VERSION}_linux_amd64.tar.gz \
  	| tar -zxf - -C /opt && \
-    mv /opt/oshinko-cli_linux_amd64 /opt/oshinko-cli && \
-    chmod +x /opt/oshinko-cli
+    mv /opt/oshinko_linux_amd64/oshinko /opt/oshinko && \
+    chmod +x /opt/oshinko
 
 RUN mkdir /opt/kube && \
     chmod -R 777 /opt/kube
