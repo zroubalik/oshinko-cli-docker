@@ -8,7 +8,7 @@ ENV OC_CLI_GIT_VERSION 7b451fc
 
 RUN curl -L https://github.com/openshift/origin/releases/download/$OC_CLI_VERSION/openshift-origin-client-tools-${OC_CLI_VERSION}-${OC_CLI_GIT_VERSION}-linux-64bit.tar.gz \
     | tar -zxf - -C /opt && \
-    cp /opt/openshift-origin-client-tools-${OC_CLI_VERSION}+${OC_CLI_GIT_VERSION}-linux-64bit/oc /opt/oc && \
+    cp /opt/openshift-origin-client-tools-${OC_CLI_VERSION}-${OC_CLI_GIT_VERSION}-linux-64bit/oc /opt/oc && \
     chmod +x /opt/oc
 
 RUN curl -L https://github.com/radanalyticsio/oshinko-cli/releases/download/$OSHINKO_CLI_VERSION/oshinko-cli_${OSHINKO_CLI_VERSION}_linux_amd64.tar.gz \
