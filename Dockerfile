@@ -2,7 +2,7 @@ FROM centos:latest
 
 MAINTAINER Zbynek Roubalik (zroubali@redhat.com)
 
-ENV OSHINKO_CLI_VERSION v0.4.4
+ENV OSHINKO_CLI_VERSION v0.4.5
 ENV OC_CLI_VERSION v3.7.0
 ENV OC_CLI_GIT_VERSION 7ed6862
 
