@@ -2,9 +2,10 @@ FROM centos:latest
 
 MAINTAINER Zbynek Roubalik (zroubali@redhat.com)
 
-ENV OSHINKO_CLI_VERSION v0.5.2
-ENV OC_CLI_VERSION v3.7.0
-ENV OC_CLI_GIT_VERSION 7ed6862
+ENV OSHINKO_CLI_VERSION v0.5.4
+ENV OC_CLI_VERSION v3.9.0
+ENV OC_CLI_GIT_VERSION 191fece
+
 
 RUN curl -L https://github.com/openshift/origin/releases/download/$OC_CLI_VERSION/openshift-origin-client-tools-${OC_CLI_VERSION}-${OC_CLI_GIT_VERSION}-linux-64bit.tar.gz \
     | tar -zxf - -C /opt && \
